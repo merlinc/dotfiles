@@ -12,6 +12,9 @@ then
   source ~/.localrc
 fi
 
+export NVM_DIR="$HOME/.nvm"
+[[ -s $HOME/.nvm/nvm/sh ]] && source $HOME/.nvm/nvm.sh
+
 # all of our zsh files
 typeset -U config_files
 config_files=($ZSH/**/*.zsh)
@@ -22,11 +25,18 @@ do
   source $file
 done
 
+
+# DEBUG echo 'START' && nvm current
+
 # load everything but the path and completion files
 for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
 do
+# DEBUG echo $file
   source $file
+# DEBUG  nvm current
 done
+
+# DEBUG echo 'END' && nvm current
 
 # initialize autocomplete here, otherwise functions won't be loaded
 autoload -U compinit
@@ -39,6 +49,7 @@ do
 done
 
 unset config_files
+
 
 # Better history
 # Credits to https://coderwall.com/p/jpj_6q/zsh-better-history-searching-with-arrow-keys

@@ -1,1 +1,10 @@
 --type-set=feature:ext:feature
+--ignore-dir=.sass-cache
+--ignore-dir=dist
+--ignore-dir=coverage
+--ignore-dir=node_modules
+--ignore-dir=bower_components
+--ignore-dir=tmp
+--ignore-dir=.idea
+--ignore-dir=.next
+--ignore-file=ext:map
