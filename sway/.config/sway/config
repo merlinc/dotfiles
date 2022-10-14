@@ -118,15 +118,17 @@ input * {
     bindsym $mod+Shift+Right move right
 
     # FN type keys
-    bindsym XF86MonBrightnessDown exec brightnessctl -d intel_backlight s 10%-
-    bindsym XF86MonBrightnessUp exec brightnessctl -d intel_backlight s 10%+
-    bindsym XF86AudioPlay exec mpc toggle
-    bindsym XF86AudioNext exec mpc next
-    bindsym XF86AudioPrev exec mpc prev
-    bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -10%
-    bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +10%
-    bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
-    bindsym Print exec grimshot --notify save active
+    # bindsym XF86MonBrightnessDown exec brightnessctl -d intel_backlight s 10%-
+    # bindsym XF86MonBrightnessUp exec brightnessctl -d intel_backlight s 10%+
+
+    # bindsym XF86AudioPlay exec mpc toggle
+    # bindsym XF86AudioNext exec mpc next
+    # bindsym XF86AudioPrev exec mpc prev
+    # bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -10%
+    # bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +10%
+    # bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
+
+    # bindsym Print exec grimshot --notify save active
 
 #
 # Workspaces:
@@ -236,8 +238,7 @@ bindsym $mod+r mode "resize"
 #         statusline #ffffff
 #         background #323232
 #         inactive_workspace #32323200 #32323200 #5c5c5c
-#     }
-
+#    
     
 # }
 

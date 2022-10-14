@@ -8,4 +8,7 @@ apt install tree
 # Stow
 apt install stow
 
+## To separate into packages
+apt install ack
+
 stow bash profile sway ulauncher vim
